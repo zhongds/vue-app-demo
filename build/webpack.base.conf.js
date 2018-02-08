@@ -19,6 +19,7 @@ const createLintingRule = () => ({
   }
 })
 
+console.log('配置信息', path.resolve(__dirname, "../src"),);
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -33,6 +34,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
+    modules: [
+      path.resolve(__dirname, "../src"),
+      "node_modules"
+    ],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
