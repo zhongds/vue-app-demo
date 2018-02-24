@@ -3,13 +3,13 @@
     <div class="left">返回</div>
     <div class="middle">
       <router-link>
-        <span>A</span>        
+        <span>A</span>
       </router-link>
       <router-link>
-        <span>B</span>        
+        <span>B</span>
       </router-link>
       <router-link>
-        <span>C</span>        
+        <span>C</span>
       </router-link>
     </div>
     <div class="right">搜索</div>
@@ -18,8 +18,8 @@
 
 <script>
 export default {
-  name: 'Header'
-}
+  name: 'Header',
+};
 </script>
 
 <style lang="less" scoped>

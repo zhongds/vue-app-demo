@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'online-music'
-}
+  name: 'online-music',
+};
 </script>
 
