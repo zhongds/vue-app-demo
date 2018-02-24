@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header fixed></Header>
+    <header-comp></header-comp>
     <router-view/>
   </div>
 </template>
@@ -9,9 +9,9 @@
 import Header from './components/Header';
 
 export default {
-  name: 'App',
+  // name: 'App',
   components: {
-    Header,
+    HeaderComp: Header,
   },
 };
 </script>

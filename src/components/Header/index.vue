@@ -1,26 +1,22 @@
 <template>
   <div class="header">
-    <div class="left">返回</div>
+    <div class="left">
+      <router-link to='/'>返回</router-link>
+    </div>
     <div class="middle">
-      <router-link>
+      <router-link :to="{name: 'my-music'}">
         <span>A</span>
       </router-link>
-      <router-link>
+      <router-link :to="{name: 'online-music'}">
         <span>B</span>
       </router-link>
-      <router-link>
+      <router-link :to="{name: 'topic'}">
         <span>C</span>
       </router-link>
     </div>
     <div class="right">搜索</div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'Header',
-};
-</script>
 
 <style lang="less" scoped>
   .header {
