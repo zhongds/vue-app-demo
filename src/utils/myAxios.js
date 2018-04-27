@@ -1,9 +1,16 @@
 import axios from 'axios';
 
+const baseUrl = 'http://localhost:3000';
+
 // Add a request interceptor
-axios.interceptors.request.use(config =>
+axios.interceptors.request.use((config) => {
   // Do something before request is sent
-  config
+  /* eslint no-param-reassign: 0 */
+  config.url = baseUrl + config.url;
+  console.log('config', config);
+  return config;
+}
+
   , error =>
   // Do something with request error
   Promise.reject(error),
